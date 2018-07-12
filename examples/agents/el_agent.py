@@ -22,7 +22,7 @@ def exec_time(func):
 
 
 env = gym.envs.make("EL_MountainCarContinuous-v0")
-video_dir = os.path.abspath("./videos")
+video_dir = os.path.abspath("../../videos")
 if not os.path.exists(video_dir):
     os.makedirs(video_dir)
 env = gym.wrappers.Monitor(env, video_dir, force=True)
